@@ -45,3 +45,9 @@ for x in sorted_by_name  :
     price_usd = "(${0:.2f})".format(x["price"])
     print ("+", x["name"], price_usd)
 
+
+# number of unique departments in list
+count = len(departments)
+print("------------------")
+print("THERE ARE", count, "PRODUCTS:")
+print("------------------")

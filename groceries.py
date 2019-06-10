@@ -46,8 +46,9 @@ for x in sorted_by_name  :
     print ("+", x["name"], price_usd)
 
 
-# number of unique departments in list
-count = len(departments)
-print("------------------")
-print("THERE ARE", count, "PRODUCTS:")
-print("------------------")
+# number of unique departments in list (TESTING)
+#count = len(departments)
+#print("------------------")
+#print("THERE ARE", count, "PRODUCTS:")
+#print("------------------")
+#

@@ -3,6 +3,8 @@
 from pprint import pprint
 #pprint = pretty print
 
+def to_usd(my_price):
+    return "${0:,.2f}".format(my_price)
 products = [
     {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", "price": 3.50},
     {"id":2, "name": "All-Seasons Salt", "department": "pantry", "aisle": "spices seasonings", "price": 4.99},
@@ -41,11 +43,11 @@ print("------------------")
 
 def sorted_by_name(any_product):
     return any_product["name"]
-
+    # [] is how you reference each attribute in a dictionary
 sorted_by_name = sorted (products, key=sorted_by_name)
 
 for x in sorted_by_name  :
-    price_usd = "(${0:.2f})".format(x["price"])
+    price_usd = to_usd(x["price"])
     print ("+", x["name"], price_usd)
 
 

@@ -1,6 +1,7 @@
 # groceries.py
 
-#from pprint import pprint
+from pprint import pprint
+#pprint = pretty print
 
 products = [
     {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", "price": 3.50},
@@ -33,7 +34,9 @@ products = [
 # number of products in list
 count = len(products)
 print("------------------")
-print("THERE ARE", count, "PRODUCTS:")
+print(f"THERE ARE {count} PRODUCTS:")
+#f means this is a string where you can pass a variable {}
+#called string interpolation 
 print("------------------")
 
 def sorted_by_name(any_product):
